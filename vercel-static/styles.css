@@ -123,7 +123,11 @@ nav h1 {
 
 a[href^="https"]:not([href*="audreystanton.com"])::after,
 a[href^="http"]:not([href*="audreystanton.com"])::after {
-  content: "↗";
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('/assets/icons/material/arrow_outward.svg') no-repeat center / contain;
   position: relative;
   top: .2rem;
   left: .1rem;
@@ -131,7 +135,11 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
 }
 
 .emailLink a::after {
-  content: "⧉";
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('/assets/icons/material/content_copy.svg') no-repeat center / contain;
   position: relative;
   top: .2rem;
   left: .2rem;
@@ -143,9 +151,30 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
 .material-icons {
   display: inline-block;
   font-size: 1rem;
+  width: 1em;
+  height: 1em;
   line-height: 1;
   font-style: normal;
   transform: translateY(4px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.material-icon-add {
+  background-image: url('/assets/icons/material/add.svg');
+}
+
+.material-icon-remove {
+  background-image: url('/assets/icons/material/remove.svg');
+}
+
+.material-icon-chevron-left {
+  background-image: url('/assets/icons/material/chevron_left.svg');
+}
+
+.material-icon-chevron-right {
+  background-image: url('/assets/icons/material/chevron_right.svg');
 }
 
 /* Assets */

@@ -7,5 +7,5 @@ $(document).ready(function () {
   });
   
   $("#projectToggle a").click(function () {
-  $("#projectToggle span").html($("#projectToggle span").html() == '−' ? '+' : '−');
+  $("#projectToggle span").toggleClass("material-icon-add material-icon-remove");
   });
