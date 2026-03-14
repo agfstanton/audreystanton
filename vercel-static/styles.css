@@ -181,35 +181,6 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
   height: 1em;
 }
 
-/* Pager */
-
-#pager {
-  margin: 0;
-}
-
-.pagerPrevious,
-.pagerNext {
-  padding: 0;
-}
-
-.pagerPrevious a,
-.pagerNext a {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.3em;
-}
-
-.pagerNext a {
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.pagerPrevious .material-icons,
-.pagerNext .material-icons {
-  flex-shrink: 0;
-  transform: translateY(3px);
-}
-
 /* Assets */
 
 img,
