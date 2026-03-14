@@ -134,6 +134,11 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
   line-height: 0;
 }
 
+a[href^="https"]:not([href*="audreystanton.com"]),
+a[href^="http"]:not([href*="audreystanton.com"]) {
+  white-space: nowrap;
+}
+
 .emailLink a::after {
   content: "";
   display: inline-block;
