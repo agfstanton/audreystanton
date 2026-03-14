@@ -4,8 +4,8 @@ html {
 
 @font-face {
   font-family: 'GT America';
-  src: url('https://www.audreystanton.com/assets/fonts/GT-America-Standard-Regular.woff2') format('woff2'),
-    url('https://www.audreystanton.com/assets/fonts/GT-America-Standard-Regular.woff') format('woff');
+  src: url('/assets/fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+    url('/assets/fonts/GT-America-Standard-Regular.woff') format('woff');
   font-display: swap;
 }
 
