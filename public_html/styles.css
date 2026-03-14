@@ -1,0 +1,284 @@
+html {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('https://www.audreystanton.com/assets/fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+    url('https://www.audreystanton.com/assets/fonts/GT-America-Standard-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+body {
+  width: 100%;
+  margin: 60px 0px 60px 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  height: 100%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+#content {
+  width: 66.666%;
+  margin-left: 33.333%;
+  padding: 0px 10px 0px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Font Styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  font-family: 'GT America';
+  font-size: 1rem;
+  font-display: swap;
+  line-height: 1.4;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+::selection {
+  background: #ffed5c;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1.5px solid black;
+}
+
+#content a:hover {
+  border-color: #ffed5c;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  left: calc((100vw - 1080px) / 2);
+  top: 50px;
+  padding: 10px;
+}
+
+nav h1,
+nav p {
+  margin-bottom: 0px;
+}
+
+nav h1 {
+  margin-left: -5px;
+}
+
+.siteTitle {
+  padding: 0px 5px;
+  background-color: #ffed5c;
+  text-decoration: none;
+  color: black;
+}
+
+.siteTitle:hover {
+  background-color: #ffffff;
+}
+
+#navBottom {
+  position: fixed;
+  bottom: 54px;
+  height: auto;
+}
+
+#navBottom a:hover {
+  border-bottom: 1.5px solid #ffed5c;
+}
+
+#navBottom ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a[href^="https"]:not([href*="audreystanton.com"])::after,
+a[href^="http"]:not([href*="audreystanton.com"])::after {
+  font-family: 'Material Icons';
+  content: "arrow_outward";
+  position: relative;
+  top: .2rem;
+  left: .1rem;
+  line-height: 0;
+  font-display: block;
+}
+
+.emailLink a::after {
+  font-family: 'Material Icons';
+  content: "content_copy";
+  position: relative;
+  top: .2rem;
+  left: .2rem;
+  line-height: 0;
+  font-display: block;
+}
+
+/* Icons */
+
+.material-icons {
+  transform: translateY(4px);
+}
+
+/* Assets */
+
+img,
+video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+img,
+video,
+.columnHalf {
+  line-height: 0;
+}
+
+/* Columns */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.columnThird {
+  width: 33.333%;
+  padding: 0px 15px;
+}
+
+.columnHalf {
+  width: 50%;
+  padding: 0px 15px;
+}
+
+.columnTwoThirds {
+  width: 66.666%;
+  height: 100%;
+  padding: 0px 15px;
+}
+
+.columnFull {
+  width: 100%;
+  height: 100%;
+  padding: 0px 15px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1179px) {
+  #wrapper {
+    margin: 0px 50px;
+  }
+
+  nav {
+    left: 50px;
+  }
+
+  #content {
+    width: 66.666%;
+    margin-left: 33.333%;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .columnHalf {
+    width: 100%;
+  }
+
+  .columnHalf+.columnHalf {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    font-size: .9rem;
+  }
+
+  nav {
+    position: static;
+    padding-top: 0px;
+  }
+
+  .siteTitle {
+    width: auto;
+    display: inline-block;
+  }
+
+  #navBottom {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    top: 58px;
+  }
+
+  #navBottom li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  #content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #navBottom {
+    position: static;
+  }
+  
+    #wrapper {
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  #wrapper {
+    margin: 0px 10px;
+  }
+}

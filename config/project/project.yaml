@@ -1,0 +1,61 @@
+dateModified: 1740941454
+email:
+  fromEmail: agfstanton@gmail.com
+  fromName: 'Audrey Stanton'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+meta:
+  __names__:
+    00c2885c-b14d-4052-8ca0-a284e5fd659a: 'Profile Links' # Profile Links
+    1beb6b6a-8a1f-441f-897d-414045d85e6b: 'Project Slideshow' # Project Slideshow
+    1f7ea306-b4bf-44e3-983d-3bacdb9a6235: 'About Text' # About Text
+    2b6788c0-cad3-4c01-9094-bf242df67d4d: Image # Image
+    2f88f403-5336-4aef-906f-9c1a1c2b53aa: Project # Project
+    4ba05a5e-6710-4eab-9b49-f39769793f5b: Profile # Profile
+    5fc0c298-d3e4-45e0-b4e1-563375adf50f: 'Project Tagline' # Project Tagline
+    6b6327a7-3b7f-42c2-afe1-341a6de242b0: 'Public Schema' # Public Schema
+    6cc5bd85-50ef-42a5-abbd-dd117c2fd2bd: 'Project Video' # Project Video
+    6d2e1a47-4846-422a-9e78-282481140ac0: 'Project Animation' # Project Animation
+    7a421327-4650-4d90-94dc-f57660bc5093: 'Audrey Stanton' # Audrey Stanton
+    8a5ce8ab-6a51-49dc-8670-8717c613b1ff: Projects # Projects
+    9d8bd428-52a9-4299-a79d-70c78bacb4e2: 'Clients Include' # Clients Include
+    9d698810-9ebc-4181-ad03-091c0e465f91: 'Project Animation' # Project Animation
+    064c3732-2cdc-4dfe-bfd6-053424be8f4a: 'Project Roles' # Project Roles
+    69de8602-c163-45d6-8d4e-d13647cda33b: 'Project Content' # Project Content
+    06203b1f-3ad6-4db0-95c0-daf5f2e77d0d: Skills # Skills
+    8817d58a-833a-479a-b6ae-163935b57e3e: 'Profile Image' # Profile Image
+    423746d2-7302-4dac-a81b-91262a5f1c6b: Thumbnail # Thumbnail
+    59635506-8c5a-4905-a053-eba164eecf5a: 'Project Image' # Project Image
+    a04c8899-3c54-41c9-a474-8c53044739ad: About # About
+    a3afdb5d-d99d-4f6e-9288-5138f911b782: 'Project Video' # Project Video
+    a1114b40-21d5-4ddf-b424-3751069780fa: 'Project Featured Image' # Project Featured Image
+    b23d9ccc-d80e-4030-ab35-94c79ba3ed0f: 'Project Content' # Project Content
+    bf2a7457-8811-46f2-860d-0c14c43c252d: Profile # Profile
+    c42d96b7-d72a-4404-abff-c1333e8aca57: Media # Media
+    d9b0acbd-94c1-4b4a-9b7c-df232aa880ec: 'Project Description' # Project Description
+    dc784a8b-d683-48e0-a2f1-1f40710a3bdc: 'Project Image' # Project Image
+    dfd4603d-58c1-4595-b48a-f6d5e4412f40: Simple # Simple
+    e0499b03-9858-43ae-b455-4c71ce36ae77: About # About
+    e5bb082c-1e52-44cb-85a9-43f88e227fef: Full # Full
+    ebfea00d-3296-43a5-8f47-d1078fd155d7: 'Project Credits' # Project Credits
+    eca632cd-4018-40c0-844b-908fceb8be43: 'Audrey Stanton' # Audrey Stanton
+    f77a1fca-7f37-43b6-ad03-6ac264f283f6: 'Project Image Split' # Project Image Split
+    f5029557-e424-4bcf-9496-5fc913fbb23b: Profile # Profile
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Audrey Stanton'
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles

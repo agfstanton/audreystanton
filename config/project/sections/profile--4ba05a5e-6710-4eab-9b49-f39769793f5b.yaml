@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f5029557-e424-4bcf-9496-5fc913fbb23b # Profile
+handle: profile
+maxAuthors: 1
+name: Profile
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  eca632cd-4018-40c0-844b-908fceb8be43: # Audrey Stanton
+    enabledByDefault: true
+    hasUrls: true
+    template: profile/_entry.twig
+    uriFormat: profile
+type: single

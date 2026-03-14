@@ -1,0 +1,67 @@
+color: yellow
+fieldLayouts:
+  714582e8-e0ce-4252-9a2c-aa137a8bf166:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-19T12:53:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f7018860-151e-479a-ae7f-5fa74dedae12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-19T12:56:19+00:00'
+            elementCondition: null
+            fieldUid: dc784a8b-d683-48e0-a2f1-1f40710a3bdc # Project Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8efdb1d4-d875-4d88-bc20-18538c98f787
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bd689fe9-3c1d-4c68-b676-51bbf1fddb62
+        userCondition: null
+handle: projectSlideshow
+hasTitleField: false
+icon: layer-group
+name: 'Project Slideshow'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

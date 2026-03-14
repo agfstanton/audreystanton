@@ -1,0 +1,5 @@
+<figure id="slideshow"></figure>
+
+{% block javascript %}
+<script>var curIndex = 0,imgDuration = 3500,slideshow = document.getElementById("slideshow"),slides = slideshow.childNodes; imgArray = [{% for image in entry.projectImage.all() %}'{{ image.getUrl('full') }}',{% endfor %}];function buildSlideShow(arr) {for (i = 0; i < arr.length; i ++) {var img = document.createElement('img');img.src = arr[i];img.className = "placeholder"; img.alt = "{% for image in entry.projectImage %}{{ image.alt }}{% endfor %}"; slideshow.appendChild(img);}}function slideShow() {function fadeIn(e) {e.className = "fadeIn";};function fadeOut(e) {e.className = "";};fadeOut(slides[curIndex]);curIndex++;if (curIndex == slides.length) {curIndex = 0;}fadeIn(slides[curIndex]);setTimeout(function () {slideShow();}, imgDuration);};buildSlideShow(imgArray);slideShow();</script>
+{% endblock %}

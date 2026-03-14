@@ -1,0 +1,12 @@
+{% block scripts %}
+  <link href="https://audreystanton.com/home.css" rel="stylesheet" />
+{% endblock %}
+
+{% extends "_layout" %}
+
+{% set posts = craft.entries.section('projects').all() %}
+
+{% block content %}
+    {% include "_includes/about" %}
+    {% include "_includes/listing" with { posts:posts } only %}
+{% endblock %}

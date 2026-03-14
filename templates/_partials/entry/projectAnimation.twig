@@ -1,0 +1,5 @@
+<div class="videoWrapper">
+	<video autoplay muted playsinline loop>
+		{% for image in entry.projectAnimation.all() %}<source src="{{ image.getUrl('full') }}" type="video/mp4"/>{% endfor %}
+	</video>
+</div>

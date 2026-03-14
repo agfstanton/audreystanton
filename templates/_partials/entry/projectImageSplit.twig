@@ -1,0 +1,3 @@
+<div class="imageSplit">
+	{% for image in entry.projectImage.all() %}<figure><img src="{{ image.getUrl('full') }}" alt="{{ image.alt }}"/></figure>{% endfor %}
+</div>

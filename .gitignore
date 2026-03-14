@@ -1,0 +1,65 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example*
+config/license.key*
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Runtime / cache / logs
+/storage/runtime/
+/storage/logs/
+/logs/
+/tmp/
+/public_html/error_log
+/www/error_log
+
+# cPanel/server backup artifacts
+/access-logs/
+/etc/
+/lscmData/
+/mail/
+/public_ftp/
+/ssl/
+/.cpanel/
+/.cagefs/
+/.cl.selector/
+/.softaculous/
+/.spamassassin/
+/.subaccounts/
+/.trash/
+/.koality/
+/.caldav/
+/.htpasswds/
+
+# Large backup bundles
+backup-*.tar.gz
+ddev.tar
+
+# Generated Craft control panel assets
+/public_html/cpresources/
+/www/cpresources/
+
+# User-generated uploads (usually externalized or migrated separately)
+/public_html/uploads/
+/www/uploads/
+
+# Duplicate extracted OS artifacts
+/public_html/__MACOSX/
+/www/__MACOSX/
+
+# Backup artifacts accidentally present inside web root
+/public_html/error_log
+/public_html/Archivo.zip
+/public_html/https:/
+/public_html/theambloguecom/
+/public_html/audreystanton.com/
+
+# Optional local dev artifacts
+/.ddev/
+
+# Keep project config and templates tracked
+!/config/project/
+!/templates/

@@ -1,0 +1,17 @@
+
+{% for post in posts %}
+	<a href="{{ post.url }}" class="teaserLink">
+		<div class="teaser">
+			<div class="row">
+				<div class="columnHalf">
+					<h2 class="teaserTagline">{{ post.projectTagline }}</h2>
+				</div>
+				<div class="columnHalf">
+					<div class="thumb">
+						<figure>{% set image = post.projectFeaturedImage.one() %}<img src="{{ image.getUrl('thumbnail') }}" width="{{ image.getWidth('thumbnail') }}" height="{{ image.getHeight('thumbnail') }}" alt="{{ image.alt }}"></figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+{% endfor %}

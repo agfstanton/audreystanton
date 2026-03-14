@@ -1,0 +1,14 @@
+{% extends '_layout' %}
+
+{% block content %}
+  <div class="row">
+    <div class="columnHalf">
+      {{ entry.aboutText }}
+    </div>
+    <div class="columnHalf">
+      {% set image = entry.profileImage.one() %}
+      <img src="{{ image.getUrl('full') }}"
+        alt="{{ image.title }}" />
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+/* Intro Text */
+
+#about {
+  margin-bottom: 40px;
+}
+
+/* Project Teasers */
+
+.teaser {
+  border-top: 1.5px solid black;
+  padding: 25px 0px;
+  margin: 0px;
+}
+
+figure{
+  padding: 0px;
+  margin: 0px;
+}
+
+.teaser .thumb {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.teaser:hover img {
+  transform: scale(105%);
+  transition: all .3s ease;
+}
+
+a:last-child .teaser {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+a:first-child .teaser {
+  padding-top: 0px;
+}
+
+.teaserTitle,
+.teaserTagline {
+  position: sticky;
+  top: 60px;
+  margin-bottom: 14px;
+}
+
+.teaserTitle {
+  display: none;
+}

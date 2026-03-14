@@ -1,0 +1,56 @@
+{% extends '_layout' %}
+
+{% block scripts %}
+<link href="../projects.css" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+<div id="projectHeader" class="row">
+	<div class="columnHalf">
+		<h2>{{ entry.title }}</h2>
+	</div>
+	<div id="projectToggle" class="columnHalf">
+		<a><span class="material-icons">add</span> Project Info</a>
+	</div>
+</div>
+<div id="projectInfo">
+	<div id="projectDescription">
+		{{ entry.projectDescription }}
+	</div>
+	<div id="projectDetails" class="row">
+		<div class="columnHalf">
+			<h3>What I did:</h3>
+			{{ entry.projectRoles }}
+		</div>
+		<div class="columnHalf">
+			<h3>Who I worked with:</h3>
+			{{ entry.projectCredits }}
+		</div>
+	</div>
+</div>
+<div id="projectContent">
+	{{ entry.projectContent }}
+</div>
+
+{% set params = craft.entries.section('projects').orderBy('postDate asc') %}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+{% if (nextEntry|length) or (prevEntry|length) %}
+<div id="pager" class="row">
+	<div class="columnHalf pagerPrevious">
+		{% if nextEntry %}
+		<a href="{{ nextEntry.url }}"><span class="material-icons">chevron_left</span> {{ nextEntry.title }}</a>
+		{% endif %}
+	</div>
+	<div class="columnHalf pagerNext">
+		{% if prevEntry %}
+		<a href="{{ prevEntry.url }}">{{ prevEntry.title }} <span class="material-icons">chevron_right</span></a>
+		{% endif %}
+	</div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block javascript %}
+<script src="../projectToggle.js"></script>
+{% endblock %}

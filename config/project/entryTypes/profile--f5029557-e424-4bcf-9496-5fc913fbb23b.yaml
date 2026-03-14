@@ -1,0 +1,131 @@
+color: cyan
+fieldLayouts:
+  0aa4d081-dbe0-4a3b-9423-c4ff4eb4d249:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-24T14:13:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 884efe1b-003c-45bf-b35d-baa01c9bcca6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T14:18:02+00:00'
+            elementCondition: null
+            fieldUid: 8817d58a-833a-479a-b6ae-163935b57e3e # Profile Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd7661c4-e84f-42fd-b6a4-6b992ff35b7c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T23:32:23+00:00'
+            elementCondition: null
+            fieldUid: 00c2885c-b14d-4052-8ca0-a284e5fd659a # Profile Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 617669e3-4b15-443e-a47b-6f5833e89722
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T14:14:39+00:00'
+            elementCondition: null
+            fieldUid: 1f7ea306-b4bf-44e3-983d-3bacdb9a6235 # About Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 184a3449-f691-49c3-985b-744f1fc68a92
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T14:26:52+00:00'
+            elementCondition: null
+            fieldUid: 9d8bd428-52a9-4299-a79d-70c78bacb4e2 # Clients Include
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b696af81-c050-449a-a4c1-bd164f5badd1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T14:26:52+00:00'
+            elementCondition: null
+            fieldUid: 06203b1f-3ad6-4db0-95c0-daf5f2e77d0d # Skills
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12e7a2bf-9f6d-45cb-8e3e-35fcf782b340
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 33515627-db44-492f-baee-4d6b45a04ce9
+        userCondition: null
+handle: profile
+hasTitleField: true
+icon: address-card
+name: Profile
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

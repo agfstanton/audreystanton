@@ -1,0 +1,27 @@
+columnSuffix: null
+handle: projectContent
+instructions: null
+name: 'Project Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 69de8602-c163-45d6-8d4e-d13647cda33b # Project Content
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  entryTypes:
+    - 59635506-8c5a-4905-a053-eba164eecf5a # Project Image
+    - f77a1fca-7f37-43b6-ad03-6ac264f283f6 # Project Image Split
+    - 1beb6b6a-8a1f-441f-897d-414045d85e6b # Project Slideshow
+    - 9d698810-9ebc-4181-ad03-091c0e465f91 # Project Animation
+    - a3afdb5d-d99d-4f6e-9288-5138f911b782 # Project Video
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

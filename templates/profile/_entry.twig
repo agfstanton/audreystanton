@@ -1,0 +1,23 @@
+{% block scripts %}
+<link href="../profile.css" rel="stylesheet"/>
+{% endblock %}
+
+{% extends '_layout' %}
+
+{% block content %}
+	<div class="row">
+		<div id ="profileText" class="columnFull">
+			{{ entry.aboutText }}
+		</div>
+	</div>
+	<div class="row">
+		<div class="columnHalf profileList">
+			<h3>What I do:</h3>
+			{{ entry.skills }}
+		</div>
+		<div class="columnHalf profileList">
+			<h3>Who I’ve worked with:</h3>
+			{{ entry.clients }}
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<div class="videoWrapper">
+	<video controls playsinline>
+		{% for image in entry.projectVideo.all() %}
+		<source src="{{ image.getUrl('') }}#t=0.5" type="video/mp4"/>
+		{% endfor %}
+	</video>
+</div>

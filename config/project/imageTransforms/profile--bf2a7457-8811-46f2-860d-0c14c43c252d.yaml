@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: profile
+height: 450
+interlace: none
+mode: crop
+name: Profile
+position: center-center
+quality: null
+upscale: true
+width: 450

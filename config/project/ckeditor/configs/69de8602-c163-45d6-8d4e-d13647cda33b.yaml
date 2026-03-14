@@ -1,0 +1,9 @@
+headingLevels: false
+name: 'Project Content'
+toolbar:
+  - createEntry
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

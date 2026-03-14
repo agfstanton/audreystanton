@@ -1,0 +1,67 @@
+color: orange
+fieldLayouts:
+  91b495cc-a072-4978-9a9f-ba0e69affff2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-17T17:23:32+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 325a83ab-41a0-4c63-bef3-e53d1e41da52
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T21:59:32+00:00'
+            elementCondition: null
+            fieldUid: 6cc5bd85-50ef-42a5-abbd-dd117c2fd2bd # Project Video
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f7a0e60f-17e7-4c47-a4f3-5bd29d655307
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e9c23c4b-3cbc-4847-a947-77389e72a967
+        userCondition: null
+handle: projectVideo
+hasTitleField: false
+icon: video
+name: 'Project Video'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

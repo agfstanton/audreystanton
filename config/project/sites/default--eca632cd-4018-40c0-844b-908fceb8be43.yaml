@@ -1,0 +1,9 @@
+baseUrl: 'https://www.audreystanton.com'
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: 'Audrey Stanton'
+primary: true
+siteGroup: 7a421327-4650-4d90-94dc-f57660bc5093 # Audrey Stanton
+sortOrder: 1
