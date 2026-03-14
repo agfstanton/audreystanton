@@ -171,14 +171,14 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
 
 .material-icon-chevron-left {
   background-image: url('/assets/icons/material/chevron_left.svg');
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
 }
 
 .material-icon-chevron-right {
   background-image: url('/assets/icons/material/chevron_right.svg');
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
 }
 
 /* Assets */
