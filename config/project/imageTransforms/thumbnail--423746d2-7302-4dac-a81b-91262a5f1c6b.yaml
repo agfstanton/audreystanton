@@ -6,6 +6,6 @@ interlace: none
 mode: crop
 name: Thumbnail
 position: center-center
-quality: 100
+quality: 78
 upscale: false
 width: 900
