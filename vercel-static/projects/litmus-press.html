@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>Audrey Stanton ✳ Litmus Press Website</title>
+	<meta name="description" content="Case study: UX/UI and information architecture for a unified Litmus Press, O Books, and Post-Apollo catalog website." />
 	<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/favicon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link href="../styles.css" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="../projects.css" rel="stylesheet"/>
 </head>
 <body>
@@ -25,17 +25,17 @@
 				<ul>
 					<li><a href="../profile">Profile</a></li>
 					<li><a href="https://www.linkedin.com/in/audreystanton">LinkedIn</a></li>
-					<li class="emailLink"><a onclick="copyToClipboard('agfstanton@gmail.com')">Email</a></li>
+					<li class="emailLink"><a href="mailto:agfstanton@gmail.com" onclick="copyToClipboard('agfstanton@gmail.com'); return false;">Email</a></li>
 				</ul>
 			</div>
 		</nav>	
-	<div id="content">
+	<main id="content">
 	<div id="projectHeader" class="row">
 	<div class="columnHalf">
 		<h2>Litmus Press Website</h2>
 	</div>
 	<div id="projectToggle" class="columnHalf">
-		<a><span class="material-icons">add</span> Project Info</a>
+		<a><span class="material-icons">+</span> Project Info</a>
 	</div>
 </div>
 <div id="projectInfo">
@@ -54,7 +54,7 @@
 	</div>
 </div>
 <div id="projectContent">
-	<figure><img loading="lazy" src="/uploads/images/_full/1129/LitmusPress_MobileMockup.webp" alt="An iPhone rests on a chair with the Litmus Press website open to the Catalog page."/></figure>
+	<figure><img loading="eager" fetchpriority="high" decoding="async" src="/uploads/images/_full/1129/LitmusPress_MobileMockup.webp" alt="An iPhone rests on a chair with the Litmus Press website open to the Catalog page."/></figure>
 <p>I started the redesign by taking an inventory of the publisher’s three sites, detailing the existing content we would need to bring together in the new site.</p><figure id="slideshow"></figure>
 
 <script>var curIndex = 0,imgDuration = 3500,slideshow = document.getElementById("slideshow"),slides = slideshow.childNodes; imgArray = ['/uploads/images/_full/907/LitmusPress_Audit_01.webp','/uploads/images/_full/908/LitmusPress_Audit_02.webp','/uploads/images/_full/909/LitmusPress_Audit_03.webp',];function buildSlideShow(arr) {for (i = 0; i < arr.length; i ++) {var img = document.createElement('img');img.src = arr[i];img.className = "placeholder"; img.alt = "The old Litmus Press website and a spreadsheet of its inventoried contents.The old O Books website and a spreadsheet of its inventoried contents.The old Post-Apollo Press website and a spreadsheet of its inventoried contents."; slideshow.appendChild(img);}}function slideShow() {function fadeIn(e) {e.className = "fadeIn";};function fadeOut(e) {e.className = "";};fadeOut(slides[curIndex]);curIndex++;if (curIndex == slides.length) {curIndex = 0;}fadeIn(slides[curIndex]);setTimeout(function () {slideShow();}, imgDuration);};buildSlideShow(imgArray);slideShow();</script>
@@ -76,13 +76,13 @@
 
 <div id="pager" class="row">
 	<div class="columnHalf pagerPrevious">
-				<a href="/projects/d-ford"><span class="material-icons">chevron_left</span> D-Ford Team Building</a>
+				<a href="/projects/d-ford"><span class="material-icons">‹</span> D-Ford Team Building</a>
 			</div>
 	<div class="columnHalf pagerNext">
-				<a href="/projects/tara">Tara Product Naming <span class="material-icons">chevron_right</span></a>
+				<a href="/projects/tara">Tara Product Naming <span class="material-icons">›</span></a>
 			</div>
 </div>
-	</div>
+	</main>
 
 <script src="../externalLinks.js"></script>
 <script src="../jquery-3.7.1.min.js"></script>

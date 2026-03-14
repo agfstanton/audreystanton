@@ -7,5 +7,5 @@ $(document).ready(function () {
   });
   
   $("#projectToggle a").click(function () {
-  $("#projectToggle span").html($("#projectToggle span").html() == 'remove' ? 'add' : 'remove');
+  $("#projectToggle span").html($("#projectToggle span").html() == '−' ? '+' : '−');
   });
