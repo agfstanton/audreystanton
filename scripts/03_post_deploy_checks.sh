@@ -3,6 +3,7 @@ set -euo pipefail
 
 # Usage:
 #   bash scripts/03_post_deploy_checks.sh https://www.audreystanton.com
+#   bash scripts/03_post_deploy_checks.sh https://www.audreystanton.com / /profile /custom-path
 
 SITE_URL="${1:-}"
 if [[ -z "$SITE_URL" ]]; then
@@ -10,20 +11,27 @@ if [[ -z "$SITE_URL" ]]; then
   exit 1
 fi
 
+shift || true
+if [[ "$#" -gt 0 ]]; then
+  ROUTES=("$@")
+else
+  ROUTES=("/" "/profile")
+fi
+
 echo "🔎 Running basic health checks for $SITE_URL"
 
 check() {
   local path="$1"
   local label="$2"
-  echo "\n- $label ($path)"
+  printf "\n- %s (%s)\n" "$label" "$path"
   curl -sS -o /dev/null -w "  status=%{http_code} time=%{time_total}s size=%{size_download}\n" "$SITE_URL$path"
 }
 
-check "/" "Homepage"
-check "/profile" "Profile"
-check "/projects" "Projects"
+for route in "${ROUTES[@]}"; do
+  check "$route" "Route"
+done
 
-echo "\n📌 If any route is 5xx or consistently >2s, inspect:"
+printf "\n📌 If any route is 5xx or consistently >2s, inspect:\n"
 echo "  - storage/logs/web-*.log"
 echo "  - php error log"
 echo "  - image transform requests under /actions/assets/generate-transform"

@@ -9,7 +9,7 @@ echo "🚀 Installing PHP dependencies..."
 composer install --no-dev --optimize-autoloader
 
 echo "🧱 Applying DB migrations..."
-php craft migrate/all --no-content
+php craft migrate/all
 
 echo "⚙️ Applying project config..."
 php craft project-config/apply
