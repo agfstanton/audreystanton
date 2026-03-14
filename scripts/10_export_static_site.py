@@ -2,6 +2,7 @@
 import argparse
 import os
 import re
+import ssl
 import sys
 from collections import deque
 from html.parser import HTMLParser
@@ -49,9 +50,15 @@ def path_for_url(url, out_dir):
     return target
 
 
-def fetch(url):
+def fetch(url, insecure=False):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; static-export-bot/1.0)"})
-    with urlopen(req, timeout=20) as res:
+    if insecure:
+        ctx = ssl._create_unverified_context()
+        res = urlopen(req, timeout=20, context=ctx)
+    else:
+        res = urlopen(req, timeout=20)
+
+    with res:
         content_type = res.headers.get("Content-Type", "")
         data = res.read()
     return data, content_type
@@ -62,6 +69,7 @@ def main():
     parser.add_argument("--base-url", required=True)
     parser.add_argument("--out-dir", default="vercel-static")
     parser.add_argument("--max-pages", type=int, default=300)
+    parser.add_argument("--insecure", action="store_true", help="Skip TLS certificate validation")
     args = parser.parse_args()
 
     base = sanitize_url(args.base_url.rstrip("/"))
@@ -87,7 +95,7 @@ def main():
             continue
 
         try:
-            data, content_type = fetch(url)
+            data, content_type = fetch(url, insecure=args.insecure)
         except Exception as exc:
             print(f"[skip] {url} ({exc})")
             continue

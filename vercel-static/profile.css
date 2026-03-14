@@ -1,0 +1,44 @@
+#profileText {
+  margin-bottom: 16px;
+}
+
+#profileImage img {
+  border-radius: 200px;
+}
+
+.profileList * {
+  font-size: .75rem;
+}
+
+.profileList h3 {
+  border-top: 1.5px solid black;
+  padding: 15px 0px 10px 0px;
+  margin-bottom: 0px;
+}
+
+.profileList ul {
+  list-style-type: none;
+  font-size: .75rem;
+  padding: 0px;
+  margin-bottom: -4px;
+}
+
+.profileList li {
+  text-indent: 10px;
+}
+
+.profileList li:before {
+  content: "–";
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1028px) {
+  .profileList ul{
+    margin-bottom: 20px;
+  }
+  .profileList:nth-child(2) ul {
+    margin-bottom: -4px;
+  }
+}

@@ -1,0 +1,153 @@
+/* Project Info */
+
+#projectHeader {
+  margin-bottom: 36px;
+}
+
+#projectToggle a {
+  margin-top: -2px;
+  border-bottom: none;
+}
+
+#projectToggle a:hover {
+  cursor: pointer;
+}
+
+/* Project Info */
+
+#projectInfo {
+  display: none;
+  margin-bottom: 18px;
+}
+
+#projectInfo #projectDescription {
+  margin: -6px 0px 35px 0px;
+}
+
+#projectDetails h3 {
+  border-top: 1.5px solid black;
+  padding: 15px 0px 10px 0px;
+  margin-bottom: 0px;
+}
+
+#projectDetails p,
+h3 {
+  font-size: .75rem;
+}
+
+#projectDetails ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#projectDetails li {
+  text-indent: 10px;
+  font-size: .75rem;
+}
+
+#projectDetails li:before {
+  content: "–";
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+/* Project Content */
+
+#projectContent p,
+#projectContent a {
+  font-size: .75rem;
+}
+
+#projectContent p {
+  padding-top: 12px;
+}
+
+figure {
+  width: 100%;
+  margin: 0px;
+}
+
+.imageSplit {
+  margin: 0px -3.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.imageSplit img {
+  height: auto;
+  padding: 0px 3.5px;
+}
+
+/* Slider */
+
+#slideshow {
+  display: grid;
+  align-items: start;
+  padding-bottom: 7px;
+}
+
+#slideshow img {
+  transition: opacity 1.5s;
+  opacity: 0;
+  grid-area: 1 / 1;
+}
+
+#slideshow img.fadeIn {
+  opacity: 1;
+}
+
+/* Pager */
+
+#pager {
+  border-top: 1.5px solid black;
+  padding-top: 25px;
+  margin: 36px 0px -6px 0px;
+  position: relative;
+}
+
+.pagerPrevious,
+.pagerNext {
+  padding: 0px;
+}
+
+.pagerNext {
+  text-align: right;
+}
+
+#pager>.pagerPrevious {
+  /* margin-bottom: -10px; */
+}
+
+#pager a {
+  border-bottom: none;
+}
+
+#pager a:hover {
+  border-bottom: 1.5px solid #ffed5c;
+}
+
+.pagerPrevious span {
+  margin-left: -8px;
+}
+
+#pager span {
+  transform: translateY(5px);
+}
+
+.pagerNext span {
+  margin-right: -8px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 550px) {
+  .imageSplit {
+    margin: 0px;
+    display: block;
+  }
+
+  .imageSplit img {
+    padding: 0px;
+  }
+}
