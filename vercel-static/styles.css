@@ -137,8 +137,8 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
 .emailLink a::after {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   background: url('/assets/icons/material/content_copy.svg') no-repeat center / contain;
   position: relative;
   top: .25rem;
