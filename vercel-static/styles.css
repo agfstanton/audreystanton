@@ -129,7 +129,7 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
   height: 1.15em;
   background: url('/assets/icons/material/arrow_outward.svg') no-repeat center / contain;
   position: relative;
-  top: .2rem;
+  top: .25rem;
   left: .1rem;
   line-height: 0;
 }
@@ -141,7 +141,7 @@ a[href^="http"]:not([href*="audreystanton.com"])::after {
   height: 1em;
   background: url('/assets/icons/material/content_copy.svg') no-repeat center / contain;
   position: relative;
-  top: .2rem;
+  top: .25rem;
   left: .2rem;
   line-height: 0;
 }
